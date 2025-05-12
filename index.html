@@ -1,10 +1,717 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
-    <script> src="game.js" </script>
-  </head>
-  <body>
-    <h1>Elijah Saint Pierre's Page</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dev Quest - Portfolio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">DEV QUEST</a>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header section -->
+    <header id="home">
+        <div class="hero">
+            <h1>DEV QUEST<span class="cursor"></span></h1>
+            <h2>SOFTWARE DEVELOPER</h2>
+            <p>Level 30 Code Warrior | Pixel Perfectionist | Bug Slayer</p>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- About section -->
+        <section id="about" class="window">
+            <h2>ABOUT ME</h2>
+            <div class="about-grid">
+                <div class="avatar">
+                    <img src="/api/placeholder/150/150" alt="Developer Avatar">
+                    <div class="stats">
+                        <div class="stat">
+                            <span>Coding</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span>Problem Solving</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span>Creativity</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span>Coffee Resistance</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h3>THE JOURNEY SO FAR</h3>
+                    <p>Greetings, traveler! I am a full-stack developer with a passion for creating elegant solutions to complex problems. My quest began many moons ago when I discovered the magical world of programming.</p>
+                    <p>After gaining experience points in various realms of software development, I've honed my skills in crafting responsive web applications, optimizing database performance, and slaying bugs with precision.</p>
+                    <p>When I'm not coding, you might find me exploring new technologies, contributing to open-source projects, or embarking on side-quests to expand my knowledge.</p>
+                    <p>I believe in writing clean, maintainable code and creating user experiences that delight and inspire. Let's join forces and build something amazing together!</p>
+                    <div class="btn-group" style="margin-top: 20px;">
+                        <a href="#contact" class="btn">JOIN MY PARTY</a>
+                        <a href="#" class="btn" id="resumeBtn">VIEW MY SCROLL (RESUME)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="window">
+            <h2>QUESTS COMPLETED</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/300/180" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Enchanted E-Commerce</h3>
+                        <p class="project-desc">A feature-rich online store with inventory management, payment processing, and a responsive shopping cart experience.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn project-detail-btn" data-project="project1">Details</a>
+                            <a href="#" class="btn">Demo</a>
+                            <a href="#" class="btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/300/180" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dungeon Task Tracker</h3>
+                        <p class="project-desc">A productivity app with drag-and-drop task management, priority levels, and achievement tracking.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn project-detail-btn" data-project="project2">Details</a>
+                            <a href="#" class="btn">Demo</a>
+                            <a href="#" class="btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/300/180" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Crystal Weather Oracle</h3>
+                        <p class="project-desc">Weather forecasting app with beautiful visualizations, location tracking, and accurate predictions.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn project-detail-btn" data-project="project3">Details</a>
+                            <a href="#" class="btn">Demo</a>
+                            <a href="#" class="btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="window">
+            <h2>ABILITIES & SPELLS</h2>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3>Frontend Magic</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Redis</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- DevOps Skills -->
+                <div class="skill-category">
+                    <h3>Summoning & Deployment</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="window">
+            <h2>SEND A MESSAGE</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>CONTACT INFO</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <span>dev@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">☎</span>
+                        <span>+1 234 567 8900</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">⌂</span>
+                        <span>Pixel City, Digital Realm</span>
+                    </div>
+                    <h3 style="margin-top: 30px;">AVAILABLE FOR</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-icon">✓</span>
+                            <span>Freelance Projects</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">✓</span>
+                            <span>Full-time Positions</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">✓</span>
+                            <span>Consulting</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">✓</span>
+                            <span>Open Source Collaboration</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>SEND A RAVEN</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">CAST SPELL (SEND)</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="social-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">CodePen</a></li>
+        </ul>
+        <p class="copyright">© 2025 DevQuest. All rights reserved. Crafted with ♥ and magic.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Project Title</h3>
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    <div class="loading" id="loading">
+        <div class="loading-text">
+            <p>LOADING...</p>
+            <p>Please wait while the magic happens!</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Project data - in a real application, this might come from an API
+        const projectData = {
+            project1: {
+                title: "Enchanted E-Commerce",
+                description: `
+                    <h4>Project Overview</h4>
+                    <p>A fully responsive e-commerce platform built from scratch, featuring a sleek design and robust functionality.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>User authentication and account management</li>
+                        <li>Product catalog with filtering and sorting</li>
+                        <li>Shopping cart and wishlist</li>
+                        <li>Secure payment processing</li>
+                        <li>Order tracking and history</li>
+                        <li>Admin dashboard for inventory management</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>HTML5, CSS3, JavaScript, Node.js, Express, MongoDB, Stripe API</p>
+                    
+                    <h4>Challenges & Solutions</h4>
+                    <p>One of the main challenges was implementing a real-time inventory system that would update across all active user sessions. This was solved by using WebSockets to create a pub/sub model for inventory updates.</p>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                    </div>
+                `,
+            },
+            project2: {
+                title: "Dungeon Task Tracker",
+                description: `
+                    <h4>Project Overview</h4>
+                    <p>A gamified task management application that turns productivity into an exciting adventure.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Drag-and-drop task organization</li>
+                        <li>Priority levels and deadlines</li>
+                        <li>Achievement system with rewards</li>
+                        <li>Team collaboration tools</li>
+                        <li>Data visualization for productivity trends</li>
+                        <li>Mobile responsive design</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>HTML5, CSS3, JavaScript, React, Firebase, Chart.js</p>
+                    
+                    <h4>Challenges & Solutions</h4>
+                    <p>Creating an intuitive drag-and-drop interface that worked well on both desktop and mobile devices was challenging. The solution was to develop custom touch handlers for mobile while using a library for desktop interactions.</p>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                    </div>
+                `,
+            },
+            project3: {
+                title: "Crystal Weather Oracle",
+                description: `
+                    <h4>Project Overview</h4>
+                    <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Real-time weather updates</li>
+                        <li>7-day forecast with detailed information</li>
+                        <li>Location-based weather tracking</li>
+                        <li>Weather alerts and notifications</li>
+                        <li>Animated weather visualizations</li>
+                        <li>Historical weather data</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+                    
+                    <h4>Challenges & Solutions</h4>
+                    <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                    </div>
+                `,
+            },
+        };
+
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show loading screen
+            const loading = document.getElementById('loading');
+            loading.style.display = 'flex';
+            
+            // Simulate loading time (remove in production)
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 1500);
+            
+            // Mobile navigation toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close mobile menu when a link is clicked
+            const navLinkItems = document.querySelectorAll('.nav-links a');
+            navLinkItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 60,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Project modal functionality
+            const modal = document.getElementById('projectModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            const closeModal = document.getElementById('closeModal');
+            const projectDetailBtns = document.querySelectorAll('.project-detail-btn');
+            
+            // Open modal with project details
+            projectDetailBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const projectId = this.getAttribute('data-project');
+                    const project = projectData[projectId];
+                    
+                    if (project) {
+                        modalTitle.textContent = project.title;
+                        modalBody.innerHTML = project.description;
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            // Close modal
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real application, you would send this data to a server
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Simulate form submission
+                    loading.style.display = 'flex';
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                        alert('Your message has been sent! Thank you for reaching out.');
+                        contactForm.reset();
+                    }, 1500);
+                });
+            }
+            
+            // Typewriter effect for the header
+            function typeWriter(element, text, i = 0) {
+                if (i < text.length) {
+                    element.textContent = text.substring(0, i + 1);
+                    setTimeout(() => typeWriter(element, text, i + 1), 100);
+                }
+            }
+            
+            // Initialize animations
+            const h1Element = document.querySelector('h1');
+            if (h1Element) {
+                const originalText = h1Element.textContent;
+                h1Element.textContent = '';
+                setTimeout(() => {
+                    typeWriter(h1Element, originalText);
+                }, 500);
+            }
+            
+            // Reveal sections on scroll
+            const revealSections = () => {
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (sectionTop < windowHeight - 100) {
+                        section.style.opacity = '1';
+                    }
+                });
+            };
+            
+            // Initial check for sections in viewport
+            revealSections();
+            
+            // Check for sections on scroll
+            window.addEventListener('scroll', revealSections);
+            
+            // Resume button event (placeholder)
+            const resumeBtn = document.getElementById('resumeBtn');
+            if (resumeBtn) {
+                resumeBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Resume download would start here in a real application!');
+                });
+            }
+        });
+    </script>
+</body>
 </html>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">React</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3>Backend Wizardry</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Express</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Django</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3>Data Archives</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">➤</span>
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-level">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </li>
