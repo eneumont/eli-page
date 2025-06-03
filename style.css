@@ -1,10 +1,3 @@
-/* ======== GLOBAL STYLES ======== */
-@font-face {
-    font-family: 'FFFont';
-    src: url('https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js');
-    /* Fallback font will be used since this is just for demo */
-}
-
 :root {
     --primary: #3a539b;
     --secondary: #1f2b54;
@@ -23,7 +16,7 @@
 }
 
 body {
-    font-family: 'FFFont', 'Press Start 2P', monospace, sans-serif;
+    font-family: 'Press Start 2P', monospace, sans-serif;
     background-color: var(--dark);
     color: var(--light);
     line-height: 1.6;
@@ -82,7 +75,7 @@ header {
     background-color: rgba(14, 20, 38, 0.7);
     padding: 20px;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     border: 4px solid var(--border);
 }
