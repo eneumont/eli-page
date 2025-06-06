@@ -27,15 +27,15 @@ const projectData = {
         `,
     },
     project2: {
-        title: "Dungeon Task Tracker",
+        title: "Tower Mercs",
         description: `
             <h4>Project Overview</h4>
-            <p>A gamified task management application that turns productivity into an exciting adventure.</p>
+            <p>A turn based action adventure game with multiplayer features, where you must recruit a group of mercenaries to fight and hopefully defeat the evil witch.</p>
             
             <h4>Key Features</h4>
             <ul>
-                <li>Drag-and-drop task organization</li>
-                <li>Priority levels and deadlines</li>
+                <li>Turn-based combat</li>
+                <li>Online Co-op</li>
                 <li>Achievement system with rewards</li>
                 <li>Team collaboration tools</li>
                 <li>Data visualization for productivity trends</li>
@@ -43,17 +43,98 @@ const projectData = {
             </ul>
             
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, React, Firebase, Chart.js</p>
+            <p>Unreal Engine, PaperZD plugin, C++</p>
             
             <h4>Challenges & Solutions</h4>
             <p>Creating an intuitive drag-and-drop interface that worked well on both desktop and mobile devices was challenging. The solution was to develop custom touch handlers for mobile while using a library for desktop interactions.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="Images/towerMercs.png" alt="Tower Mercs picture" style="max-width: 100%; border: 2px solid var(--border);">
+            </div>
+        `,
+    },
+    project3: {
+        title: "Crystal Weather Oracle",
+        description: `
+            <h4>Project Overview</h4>
+            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            
+            <h4>Key Features</h4>
+            <ul>
+                <li>Real-time weather updates</li>
+                <li>7-day forecast with detailed information</li>
+                <li>Location-based weather tracking</li>
+                <li>Weather alerts and notifications</li>
+                <li>Animated weather visualizations</li>
+                <li>Historical weather data</li>
+            </ul>
+            
+            <h4>Technologies Used</h4>
+            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            
+            <h4>Challenges & Solutions</h4>
+            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
             
             <div style="text-align: center; margin-top: 20px;">
                 <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
-    project3: {
+    project4: {
+        title: "Crystal Weather Oracle",
+        description: `
+            <h4>Project Overview</h4>
+            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            
+            <h4>Key Features</h4>
+            <ul>
+                <li>Real-time weather updates</li>
+                <li>7-day forecast with detailed information</li>
+                <li>Location-based weather tracking</li>
+                <li>Weather alerts and notifications</li>
+                <li>Animated weather visualizations</li>
+                <li>Historical weather data</li>
+            </ul>
+            
+            <h4>Technologies Used</h4>
+            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            
+            <h4>Challenges & Solutions</h4>
+            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+            </div>
+        `,
+    },
+    project5: {
+        title: "Crystal Weather Oracle",
+        description: `
+            <h4>Project Overview</h4>
+            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            
+            <h4>Key Features</h4>
+            <ul>
+                <li>Real-time weather updates</li>
+                <li>7-day forecast with detailed information</li>
+                <li>Location-based weather tracking</li>
+                <li>Weather alerts and notifications</li>
+                <li>Animated weather visualizations</li>
+                <li>Historical weather data</li>
+            </ul>
+            
+            <h4>Technologies Used</h4>
+            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            
+            <h4>Challenges & Solutions</h4>
+            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+            </div>
+        `,
+    },
+    project6: {
         title: "Crystal Weather Oracle",
         description: `
             <h4>Project Overview</h4>
@@ -182,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
             loading.style.display = 'flex';
             setTimeout(() => {
                 loading.style.display = 'none';
-                alert('Your message has been sent! Thank you for reaching out.');
+                alert('Message sent, thanks for reaching out.');
                 contactForm.reset();
             }, 1500);
         });
