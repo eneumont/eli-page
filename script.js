@@ -1,28 +1,27 @@
 const projectData = {
     project1: {
-        title: "Enchanted E-Commerce",
+        title: "React Native Emergency Guide App",
         description: `
             <h4>Project Overview</h4>
-            <p>A fully responsive e-commerce platform built from scratch, featuring a sleek design and robust functionality.</p>
+            <p>A react app designed to help emergency services locate people in need of assistance.</p>
             
             <h4>Key Features</h4>
             <ul>
                 <li>User authentication and account management</li>
-                <li>Product catalog with filtering and sorting</li>
-                <li>Shopping cart and wishlist</li>
-                <li>Secure payment processing</li>
-                <li>Order tracking and history</li>
-                <li>Admin dashboard for inventory management</li>
+                <li>Map integration with real-time location tracking</li>
+                <li>Emergency contact list</li>
+                <li>Real-time chat with emergency services</li>
+                <li>Emergency alert system</li>
             </ul>
-            
+
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, Node.js, Express, MongoDB, Stripe API</p>
+            <p>HTML5, CSS3, JavaScript, React Native</p>
             
             <h4>Challenges & Solutions</h4>
-            <p>One of the main challenges was implementing a real-time inventory system that would update across all active user sessions. This was solved by using WebSockets to create a pub/sub model for inventory updates.</p>
+            <p>One of the main challenges was implementing a map integration with real-time location tracking. This was solved by learning how to use the Google Maps API.</p>
             
             <div style="text-align: center; margin-top: 20px;">
-                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                <img src="Images/nativeLogo.png" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
@@ -36,10 +35,7 @@ const projectData = {
             <ul>
                 <li>Turn-based combat</li>
                 <li>Online Co-op</li>
-                <li>Achievement system with rewards</li>
-                <li>Team collaboration tools</li>
-                <li>Data visualization for productivity trends</li>
-                <li>Mobile responsive design</li>
+                <li>3D Exploration</li>
             </ul>
             
             <h4>Technologies Used</h4>
@@ -54,110 +50,94 @@ const projectData = {
         `,
     },
     project3: {
-        title: "Crystal Weather Oracle",
+        title: "Eternal Voyage",
         description: `
             <h4>Project Overview</h4>
-            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            <p>A VR CO-OP game where you must either work together or against players to complete tasks around a ship.</p>
             
             <h4>Key Features</h4>
             <ul>
-                <li>Real-time weather updates</li>
-                <li>7-day forecast with detailed information</li>
-                <li>Location-based weather tracking</li>
-                <li>Weather alerts and notifications</li>
-                <li>Animated weather visualizations</li>
-                <li>Historical weather data</li>
+                <li>VR</li>
+                <li>Online Multiplayer</li>
+                <li>Task based gameplay</li>
             </ul>
-            
+
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            <p>Unreal Engine, C++</p>
             
             <h4>Challenges & Solutions</h4>
-            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
-            
+            <p>Online multiplayer was difficult to implement, and took continous effort in researching, testing, and debugging. Unreal Engine's features.</p>
+
             <div style="text-align: center; margin-top: 20px;">
-                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                <img src="Images/eternalVoyage.png" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
     project4: {
-        title: "Crystal Weather Oracle",
+        title: "ML Pong",
         description: `
             <h4>Project Overview</h4>
-            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            <p>A basic program teaching machine learning agents Pong. Using Unity and Anaconda.</p>
             
             <h4>Key Features</h4>
             <ul>
-                <li>Real-time weather updates</li>
-                <li>7-day forecast with detailed information</li>
-                <li>Location-based weather tracking</li>
-                <li>Weather alerts and notifications</li>
-                <li>Animated weather visualizations</li>
-                <li>Historical weather data</li>
+                <li>Machine learning</li>
             </ul>
             
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            <p>Unity, Anaconda</p>
             
             <h4>Challenges & Solutions</h4>
-            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+            <p>The biggest challenge was getting the machine learning agents to learn to play Pong. The solution was to use a reinforcement learning algorithm and training multiple agents over time.</p>
             
             <div style="text-align: center; margin-top: 20px;">
-                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                <img src="Images/mlPong.png" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
     project5: {
-        title: "Crystal Weather Oracle",
+        title: "DreamWare",
         description: `
             <h4>Project Overview</h4>
-            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            <p>A Kiosk game where you can play up to 4 minigames and compete with friends.</p>
             
             <h4>Key Features</h4>
             <ul>
-                <li>Real-time weather updates</li>
-                <li>7-day forecast with detailed information</li>
-                <li>Location-based weather tracking</li>
-                <li>Weather alerts and notifications</li>
-                <li>Animated weather visualizations</li>
-                <li>Historical weather data</li>
+                <li>4 Different Minigames</li>
+                <li>Leaderboard</li>
             </ul>
             
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            <p>Unity, C#</p>
             
             <h4>Challenges & Solutions</h4>
-            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+            <p>The biggest challenge was UI making sure information was clearly displayed and understood even for younger audiences.</p>
             
             <div style="text-align: center; margin-top: 20px;">
-                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                <img src="Images/dreamscapes.png" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
     project6: {
-        title: "Crystal Weather Oracle",
+        title: "This Portfolio Site",
         description: `
             <h4>Project Overview</h4>
-            <p>A beautiful weather forecasting application with visually stunning displays and accurate predictions.</p>
+            <p>A portfolio site built with basic html, css, and javascript.</p>
             
             <h4>Key Features</h4>
             <ul>
-                <li>Real-time weather updates</li>
-                <li>7-day forecast with detailed information</li>
-                <li>Location-based weather tracking</li>
-                <li>Weather alerts and notifications</li>
-                <li>Animated weather visualizations</li>
-                <li>Historical weather data</li>
+                <li>Responsive Design</li>
+                <li>Various UI Features</li>
             </ul>
             
             <h4>Technologies Used</h4>
-            <p>HTML5, CSS3, JavaScript, Vue.js, Weather API, Geolocation API</p>
+            <p>HTML5, CSS3, JavaScript</p>
             
             <h4>Challenges & Solutions</h4>
-            <p>Creating smooth animations that reflected weather conditions while maintaining performance was difficult. The solution involved using CSS animations combined with canvas elements for more complex visualizations.</p>
+            <p>The biggest challenge was getting learning various techniques and implementing them into the site, which was primarily solved by reading documentation looking up said features.</p>
             
             <div style="text-align: center; margin-top: 20px;">
-                <img src="/api/placeholder/600/300" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
+                <img src="Images/portfolioSite.png" alt="Project Screenshot" style="max-width: 100%; border: 2px solid var(--border);">
             </div>
         `,
     },
