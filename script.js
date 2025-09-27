@@ -285,12 +285,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check for sections on scroll
     window.addEventListener('scroll', revealSections);
 
-    // Resume button event (placeholder)
-    const resumeBtn = document.getElementById('resumeBtn');
-    if (resumeBtn) {
-        resumeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Resume download would start here in a real application!');
-        });
-    }
+    // Resume button - now works with direct download
+    // No JavaScript needed - the download attribute handles it
 });
